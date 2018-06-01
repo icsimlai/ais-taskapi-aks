@@ -84,10 +84,9 @@ spec:
   - metadata:
       name: mongodb-persistent-storage-claim
       annotations:
-
     spec:
       accessModes: [ "ReadWriteOnce" ]
       resources:
         requests:
-          storage: 1G
+          storage: "800Mi"
 
