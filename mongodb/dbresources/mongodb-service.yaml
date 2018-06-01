@@ -89,5 +89,5 @@ spec:
       accessModes: [ "ReadWriteOnce" ]
       resources:
         requests:
-          storage: "600Mi"
+          storage: 1G
 
