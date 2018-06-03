@@ -41,7 +41,12 @@ Note: If we get 'unauthorized: authentication required' error please login using
 > az acr repository list --name aisazdevopsacr --output table
 
 4) Create a secret that contains the credentials to connect to ACR as shown below:
-> kubectl create secret docker-registry taskapiacrsecret --docker-server aisazdevopsacr.azurecr.io --docker-email Itesh.Simlai@appliedis.com --docker-username=aisazdevopsacr --docker-password  TsxMM8AmiLHUiALPsU6X+qJya2h2ZnbJ
+First create a namespace called 'prod'  using below command:
+> kubectl create namespace prod
+
+Next create the secret in that namespace using below command:
+
+> kubectl create secret docker-registry taskapiacrsecret --docker-server aisazdevopsacr.azurecr.io --docker-email Itesh.Simlai@appliedis.com --docker-username=aisazdevopsacr --docker-password  TsxMM8AmiLHUiALPsU6X+qJya2h2ZnbJ  --namespace prod
 
     secret "taskapiacrsecret" created
 
