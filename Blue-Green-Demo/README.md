@@ -24,7 +24,7 @@ Note: Please make sure not to check in the code into Git Hub. This changes in co
 
 > docker images     <-- View the Images that already exists
 
-> docker build -t taskapi-aspnetcore-v1.0.0 .        <-- Build the Images 
+> docker build -t taskapi-aspnetcore-v1.0.0 .        <-- Build the Images. Please copy the command till the arrow mark
 
     Successfully built a3965b1bbff9
 
@@ -42,6 +42,7 @@ Note: If we get 'unauthorized: authentication required' error please login using
 
 4) Create a secret that contains the credentials to connect to ACR as shown below:
 > kubectl create secret docker-registry taskapiacrsecret --docker-server aisazdevopsacr.azurecr.io --docker-email Itesh.Simlai@appliedis.com --docker-username=aisazdevopsacr --docker-password  TsxMM8AmiLHUiALPsU6X+qJya2h2ZnbJ
+
     secret "taskapiacrsecret" created
 
 5) Change PS directory to '..\GitHub\ais-taskapi-aks\Blue-Green-Demo' and execute the below command to get the Service Account details:
