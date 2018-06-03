@@ -53,6 +53,12 @@ Note: If we get 'unauthorized: authentication required' error please login using
 imagePullSecrets:
 - name: taskapiacrsecret
 
+Replace the default associated with the cluster by running the below command:
+> kubectl replace serviceaccount default -f ./serviceaccount.yml
+
+serviceaccount "default" replaced
+
+
 7) Make sure the Blue Deployment file ('taskapi-aspnetcore-config-blue.yml') contains the 'imagePullSecrets' as shown below:
 apiVersion: apps/v1beta1
 
