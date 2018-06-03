@@ -5,7 +5,7 @@ This is the readme document of the Blue/Green Deployment. The same Task API solu
 - Azure CLI installed in the machine where the Kubectl Client will run. It could be Laptop, Desktop, Portal. Azure CLI can be installed from here, https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
 - Use the AzPowerShell in Admin mode and execute the below steps 
 - Set the execution policy in Power Shell 'Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned'
-- The AKS Cluster is already created and running 
+- The AKS Cluster is already created and running. Kubectl client from where Kubectl commands will run is pointing to the same.
 
 **Steps:**
 
